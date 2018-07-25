@@ -15,6 +15,9 @@ namespace shared_model {
 
     class TransactionBatch {
      public:
+      TransactionBatch() = delete;
+      TransactionBatch(const TransactionBatch &) = default;
+      TransactionBatch(TransactionBatch &&) = default;
 
       /**
        * Create transaction batch out of collection of transactions
